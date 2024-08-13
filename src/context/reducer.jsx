@@ -72,7 +72,7 @@ export function reducer(state, action) {
             return {
                 ...state,
                 cart: state.cart.filter(item => item._id !== action.payload._id),
-                totalAmount: null
+                cartItems:{...state.cartItems, [action.payload._id]:0}
             }
         case "TOTAL_AMOUNT":
             state.totalAmount = null

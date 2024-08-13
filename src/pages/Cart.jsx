@@ -12,7 +12,6 @@ import { getFoodData } from "../Hooks/GetFoodData";
 const Cart = () => {
   const { state, dispatch } = useContext(MainContext)
   const url = 'https://delivery-data-base.onrender.com/food_list'
-  console.log(state);
 
 
   useEffect(() => {
