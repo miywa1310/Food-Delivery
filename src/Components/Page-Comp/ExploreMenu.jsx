@@ -21,8 +21,8 @@ const ExploreMenu = ({ category, setCategory }) => {
     getCategory()
   }, [])
   return (
-    <div className='overflow-x-auto p-[30px]'>
-      <ul className='flex justify-between items-center gap-[30px] max-w-max'>
+    <div className='overflow-x-auto p-[30px] w-full'>
+      <ul className='flex justify-between items-center gap-[30px] w-full'>
         {
           loadingCategory ?
             [1, 2, 3, 4, 5, 6, 7, 8].map(item => (
